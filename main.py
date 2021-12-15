@@ -23,8 +23,8 @@ def load_image(img):
 st.title("Neural Style Transfer")
 col1_upload, col2_upload = st.columns(2)
 
-content_image = col1_upload.file_uploader("Content image", type="jpg")
-style_image = col2_upload.file_uploader("Style image", type="jpg")
+content_image = col1_upload.file_uploader("Content image", type=["png","jpg","jpeg","tiff"])
+style_image = col2_upload.file_uploader("Style image", type=["png","jpg","jpeg","tiff"])
 col1_show, col2_show = st.columns(2)
 
 with st.spinner('Wait upload content_image...'):
